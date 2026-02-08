@@ -1,11 +1,11 @@
-/* Clean light theme for a one-page personal site */
+/* Clean light theme (matches index.html: container/card/buttons) */
 :root{
   --bg: #f7f8fb;
   --card: #ffffff;
   --text: #0f172a;
   --muted: #475569;
-  --accent: #2563eb;
   --border: rgba(15, 23, 42, 0.12);
+  --accent: #2563eb;
 }
 
 *{ box-sizing:border-box; }
@@ -14,8 +14,9 @@ html,body{ height:100%; }
 body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  background: var(--bg);
+  background: var(--bg);   /* LIGHT background */
   color: var(--text);
+  line-height: 1.6;
 }
 
 .container{
@@ -56,6 +57,7 @@ h1{
   margin: 0 0 10px;
   font-size: 18px;
   letter-spacing: -0.01em;
+  color: var(--text);
 }
 
 .card p{
@@ -64,7 +66,7 @@ h1{
   line-height: 1.6;
 }
 
-/* Keep About as one paragraph, but readable */
+/* About paragraph: keep it readable */
 .about{
   max-width: 70ch;
 }
@@ -113,7 +115,6 @@ h1{
   background: rgba(37,99,235,0.14);
 }
 
-/* Keyboard accessibility */
 .btn:focus-visible{
   outline: 2px solid rgba(37,99,235,0.60);
   outline-offset: 3px;
