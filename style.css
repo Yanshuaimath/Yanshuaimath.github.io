@@ -1,0 +1,125 @@
+/* Minimal, clean single-page site for GitHub Pages */
+:root{
+  --bg:#0b0f17;
+  --card:#121a2a;
+  --text:#e7ecf3;
+  --muted:#b9c3d6;
+  --accent:#6aa6ff;
+  --accent2:#8ef0c8;
+  --border:rgba(255,255,255,0.10);
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(106,166,255,0.18), transparent 60%),
+              radial-gradient(1200px 600px at 90% 10%, rgba(142,240,200,0.12), transparent 60%),
+              var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 18px 40px;
+}
+
+.header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:18px;
+  padding: 6px 2px 14px;
+}
+
+h1{
+  margin:0;
+  font-size: 40px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle{
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.card{
+  background: rgba(18,26,42,0.92);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.card h2{
+  margin: 0 0 10px;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+@media (min-width: 860px){
+  .grid{ grid-template-columns: 1fr 1fr; }
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin: 10px 0 8px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration:none;
+  background: rgba(255,255,255,0.04);
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn:hover{
+  transform: translateY(-1px);
+  border-color: rgba(106,166,255,0.55);
+  background: rgba(106,166,255,0.10);
+}
+
+.btn.primary{
+  border-color: rgba(106,166,255,0.70);
+  background: rgba(106,166,255,0.18);
+}
+
+ul{
+  margin: 0 0 8px 18px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.note{
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+  font-size: 14px;
+}
+
+.footer{
+  margin-top: 16px;
+  text-align:center;
+  color: rgba(185,195,214,0.8);
+  font-size: 13px;
+}
