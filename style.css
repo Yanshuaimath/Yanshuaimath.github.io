@@ -1,3 +1,4 @@
+
 /* Minimal, clean single-page site for GitHub Pages */
 :root{
   --bg:#0b0f17;
@@ -54,15 +55,10 @@ h1{
   line-height: 1.55;
 }
 
-/* Inline links (in case you add any) */
-.card a{
-  color: var(--text);
-  text-decoration: underline;
-  text-decoration-color: rgba(106,166,255,0.55);
-  text-underline-offset: 3px;
-}
-.card a:hover{
-  text-decoration-color: rgba(106,166,255,0.90);
+/* Justified paragraph for About section */
+.about{
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .card{
@@ -135,6 +131,17 @@ h1{
 .btn:focus-visible{
   outline: 2px solid rgba(106,166,255,0.75);
   outline-offset: 3px;
+}
+
+/* Inline links (in case you add any in text) */
+.card a{
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: rgba(106,166,255,0.55);
+  text-underline-offset: 3px;
+}
+.card a:hover{
+  text-decoration-color: rgba(106,166,255,0.90);
 }
 
 ul{
